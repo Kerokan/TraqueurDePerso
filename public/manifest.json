@@ -1,15 +1,15 @@
 {
-  "name": "Traqueur de personnage",
-  "author": "Kerokan",
-  "icon": "/icon.svg",
-  "version": "1.0.0",
-  "description": "Ajoute un traqueur d'initiative, des points de vie, de la Classe d'Armure, et des statistiques de combat de vos personnages",
-  "manifest_version": 1,
-  "action": {
-    "title": "Traqueur de personnage",
-    "icon": "/icon.svg",
-    "popover": "/",
-    "height": 800,
-    "width": 300
-  }
+	"name": "Traqueur de personnage",
+	"author": "Kerokan",
+	"icon": "/icon.svg",
+	"version": "2.0.0",
+	"description": "Ajoute un traqueur d'initiative, des points de vie, de la Classe d'Armure, et des statistiques de combat de vos personnages",
+	"manifest_version": 1,
+	"action": {
+		"title": "Traqueur de personnage",
+		"icon": "/icon.svg",
+		"popover": "/",
+		"height": 800,
+		"width": 400
+	}
 }

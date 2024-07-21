@@ -14,4 +14,5 @@ GNU GPLv3
 
 # Contributing
 Copyright (C) 2023 Owlbear Rodeo
+
 Copyright (C) 2023 Kerokan
