@@ -462,7 +462,7 @@ export const InitiativeList = () => {
 		};
 
 		getRole();
-	}, [OBR.player]);
+	}, [OBR.player, OBR.isReady]);
 
 	if (character !== null) {
 		return (
