@@ -464,6 +464,24 @@ export const InitiativeList = () => {
 		getRole();
 	}, [OBR.player, OBR.isReady]);
 
+	useEffect(() => {
+		if (userRole === 'PLAYER' && openedCharacter === '') {
+			OBR.action.setWidth(280);
+		} else {
+			OBR.action.setWidth(400);
+		}
+	}, [userRole, openedCharacter]);
+
+	useEffect(() => {
+		if (openedCharacter === '') {
+			console.log(items.length);
+			console.log(Math.min(items.length * 48 + 150, 710));
+			OBR.action.setHeight(Math.min(items.length * 48 + 150, 710));
+		} else {
+			OBR.action.setHeight(710);
+		}
+	}, [items, openedCharacter]);
+
 	if (character !== null) {
 		return (
 			<CharacterContainer>
@@ -745,7 +763,7 @@ export const InitiativeList = () => {
 				<ItemContainer key='-1' isBig={false}>
 					<Value></Value>
 					<Name style={{ cursor: 'auto' }}>Nom</Name>
-					<Value>Bonus Atq.</Value>
+					<Value>Atq.</Value>
 					<Value>Init.</Value>
 				</ItemContainer>
 			)}
